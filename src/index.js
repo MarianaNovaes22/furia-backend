@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://furia-chatbot-chi.vercel.app"],
 }))
 app.use(express.json());
 
